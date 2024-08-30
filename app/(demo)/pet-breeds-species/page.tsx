@@ -249,13 +249,12 @@ export default function PetPage() {
   //     console.log("nigga: ",List)
   //     setSpeciesList(List);
   // }
-  
+
   const List: BreedProps[] = Array.isArray(response.data) ? response.data.map((breed: BreedProps) => ({
     BreedID: breed.BreedID,
     BreedName: breed.BreedName,
     Species: breed.Species
   })) : [];
-
   setBreedList(List);
 }
 
